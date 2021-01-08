@@ -38,9 +38,37 @@ if chas1 > 99:
 
 
 print("you entered " + str(chas1) + ":" + str(min2) + ":" + str(sec1))
-"""
 
 inp1 = int(input("please, enter a num\n"))
 #s = inp1 + int(str(inp1) + str(inp1)) + int(str(inp1) + str(inp1) + str(inp1))
 s = inp1 * 123
 print("you entered " + str(s))
+"""
+"""
+i = 0
+lengh = 20
+while i < lengh:
+    #print("the number is " + str(i))
+    if i == 9:
+        break
+    i = i + 1
+"""
+
+inp1=int(input("Pls, inter a num\n"))
+"""
+step2 = int(inp1 / 10)
+step3 = inp1 % 10
+if step2 > step3:
+    print(step2)
+else : print(step3)
+"""
+max_num = 0
+while True :
+    if (inp1 % 10 > max_num):
+        max_num = inp1 % 10
+    print("Compared " + str(inp1 % 10) + ". Curr max is " + str(max_num))
+    inp1= int(inp1 / 10)
+    if inp1 == 0:
+        break
+print("the result is " + str(max_num))
+ 
