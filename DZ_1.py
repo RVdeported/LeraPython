@@ -54,21 +54,48 @@ while i < lengh:
     i = i + 1
 """
 
-inp1=int(input("Pls, inter a num\n"))
+#inp1=int(input("Pls, inter a num\n"))
 """
 step2 = int(inp1 / 10)
 step3 = inp1 % 10
 if step2 > step3:
     print(step2)
 else : print(step3)
-"""
+
 max_num = 0
-while True :
+while inp1 == 0:
     if (inp1 % 10 > max_num):
         max_num = inp1 % 10
     print("Compared " + str(inp1 % 10) + ". Curr max is " + str(max_num))
     inp1= int(inp1 / 10)
-    if inp1 == 0:
-        break
 print("the result is " + str(max_num))
+
+
+inp1=int(input("Pls, enter revenue\n"))
+inp2=int(input("Pls, enter costs\n"))
+result = inp1 - inp2
+if result > 0 :
+    print("Profit " + str(result))
+    print("% profit " + str(result / inp1))
+else :
+    print("Loss " + str(result))
+inp3 = int(input("Pls, enter num of emp\n"))
+print("Profit per emp " + str(result / inp3))
+"""
+"""
+inp1= 2 #int(input("Pls, enter a km\n"))
+inp2= 3 #int(input("Pls, enter b km\n"))
+i=1
+while inp1 <= inp2 :
+    print(str(i) + " день " + ": " + str(inp1))
+    inp1 = round(inp1 * 1.1,2)
+    i=i + 1
+print(str(i) + " день " + ": " + str(inp1))
+"""
+
+    
+    
+
+
+
  
